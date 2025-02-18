@@ -32,4 +32,4 @@ jobs:
         run: npm install -g vercel  # Install Vercel CLI
 
       - name: Deploy to Vercel
-        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}  # Deploy the app
+        run: vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }} # Deploy the app
